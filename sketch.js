@@ -44,7 +44,6 @@ function setup() {
     balloon1 = createSprite(250,700,65,100);
     balloon1.addImage("pc",balloon1Img);
     balloon1.setCollider("circle",0,-15,45);
-    balloon1.debug = true
 
     resetButton=createSprite(250,60)
     resetButton.addImage(resetButtonImg);
@@ -122,7 +121,6 @@ function spawnObstacles(){
                  obs1grp.add(obstacle1);
                  obstacle1.lifetime = 300;
                  obstacle1.setCollider("circle",0,-15,90);
-                 obstacle1.debug = true
                  break;
          case 2: obstacle2=createSprite(Math.round(random(1,500)),200,80,40);
                  obstacle2.velocityY = 6;
@@ -138,7 +136,6 @@ function spawnObstacles(){
                  obs3grp.add(obstacle3);
                  obstacle3.lifetime = 300;
                  obstacle1.setCollider("circle",0,-15,90);
-                 obstacle1.debug = true
                  break;
          default: break;
        }
@@ -164,7 +161,6 @@ function spawnObstacles2(){
                  obs1grp.add(obstacle1);
                  obstacle1.lifetime = 300;
                  obstacle1.setCollider("circle",0,-15,90);
-                 obstacle1.debug = true
                  break;
          case 2: obstacle2=createSprite(Math.round(random(1,500)),200,80,40);
                  obstacle2.velocityY = 6;
@@ -180,7 +176,6 @@ function spawnObstacles2(){
                  obs3grp.add(obstacle3);
                  obstacle3.lifetime = 300;
                  obstacle1.setCollider("circle",0,-15,90);
-                 obstacle1.debug = true
                  break;
          default: break;
        }
